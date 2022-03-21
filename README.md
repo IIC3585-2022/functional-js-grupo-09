@@ -44,5 +44,3 @@ Como se sugiere  implementar:
 3. Una función que permita manejar el diálogo con el simulador
 
 Pueden descomponer el problema de otra forma, pueden usar otro formato para la entrada de puntajes, etc.  Lo importante es que el programa funcione como se indica, pero en este caso es **mucho más importante el mantenerse dentro del paradigma funcional**.
-
-
