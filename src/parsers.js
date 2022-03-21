@@ -1,4 +1,4 @@
-const pointsParser = (pointData) => {
+export const pointsParser = (pointData) => {
   if (pointData === 'DB'){
     return 50;
   };
@@ -7,5 +7,3 @@ const pointsParser = (pointData) => {
   };
   return pointData[0] * pointData[1];
 };
-
-export default pointsParser;
