@@ -27,6 +27,7 @@ const addPlayers = (players, name) => {
 
 const enterPlayers = (players, n_players, input) => {
   n_players = input;
+  //idea: esto se puede hacer con iterators y generators
   for(let i = 1; i <= n_players; i++){
     dialog(1, players, n_players);
   }
