@@ -5,11 +5,11 @@
 
 ## Integrantes
 
-| **Nombre**   | **github** | **mail**     |
-|--------------|------------|--------------|
-| Gerardo Crot | gicrot     | gicrot@uc.cl |
-|              |            |              |
-|              |            |              |
+| **Nombre**            | **github** | **mail**          |
+|-----------------------|------------|-------------------|
+| Gerardo Crot          | gicrot     | gicrot@uc.cl      |
+| María Josefa Espinoza | mjespinoza | mjespinoza2@uc.cl |
+|                       |            |                   |
 
 ## Entrega
 
