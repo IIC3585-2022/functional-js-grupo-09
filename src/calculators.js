@@ -41,7 +41,7 @@ export const dialog = (id, players, n_players) =>{
   input: process.stdin,
   output: process.stdout
   })
-  
+
   if (id ==0){
     rl.question('Ingresar número de jugadores\n', number => {
       if(number < 2){
@@ -53,6 +53,7 @@ export const dialog = (id, players, n_players) =>{
       
     })
   } else if (id == 1){
+    //no funciona, voy a investigar como se puede hacer
       rl.question('Ingresar nombre jugador:\n', answer =>{
         addPlayers(players, answer);
         console.log('¡Hola ' + answer + '! tu puntaje inicial es 501\n');  
