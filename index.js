@@ -1,10 +1,10 @@
-import pointsParser from './src/pointsParser.js';
+import { enterPlay } from './src/calculators.js';
 
 // Main script
 
 const main = () => {
-  let points = pointsParser([3,20]);
-  console.log(points);
+  let data = enterPlay('Mike', 501, [[3,20], 'SB', 'DB']);
+  console.log(data);
 };
 
 main();
