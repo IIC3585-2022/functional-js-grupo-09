@@ -21,7 +21,9 @@ export const enterPlay = (user, userPoints, userPlays) => {
 
 //funcion para editar el array de jugadores (no retorna)
 const addPlayers = (players, n_players, readline) => {
-  
+  for( let i = 0; i < n_players; i++){
+    
+  }
 
   
   
