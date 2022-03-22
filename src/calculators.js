@@ -1,5 +1,6 @@
 import _ from 'lodash';
 
+
 import {
   pointsParser
 } from './parsers.js';
@@ -18,8 +19,35 @@ export const enterPlay = (user, userPoints, userPlays) => {
 };
 
 
+//funcion para editar el array de jugadores (no retorna)
+const addPlayers = (players, n_players, readline) => {
+  
+
+  
+  
+}
 
 //funciones para manejar el dialogo:
+
 //1.funcion para pedir jugadas 
+
+
 //2.funcion para notificar resultado de las jugadas
+
+
 //3.funcion para pedir el numero de jugadores y sus nombres
+export const enterPlayers = (players, n_players, readline) => {
+  readline.question('Ingresar número de jugadores\n', number => {
+    if(number < 2){
+      console.log("Deben ser al menos dos jugadores, ¡Hasta la próxima!");
+    } else{
+      n_players = number;
+      addPlayers(players, n_players);
+    }
+    readline.close()
+  })
+
+}
+
+
+
