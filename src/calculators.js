@@ -16,3 +16,10 @@ export const enterPlay = (user, userPoints, userPlays) => {
     .value()
   return calculatePoints(userPoints, parsedPoints);
 };
+
+
+
+//funciones para manejar el dialogo:
+//1.funcion para pedir jugadas 
+//2.funcion para notificar resultado de las jugadas
+//3.funcion para pedir el numero de jugadores y sus nombres
