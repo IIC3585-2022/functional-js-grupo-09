@@ -54,6 +54,7 @@ export const dialog = (id, players, n_players) =>{
     })
   } else if (id == 1){
     //no funciona, voy a investigar como se puede hacer
+    //https://stackoverflow.com/questions/24464404/how-to-readline-infinitely-in-node-js
       rl.question('Ingresar nombre jugador:\n', answer =>{
         addPlayers(players, answer);
         console.log('¡Hola ' + answer + '! tu puntaje inicial es 501\n');  
