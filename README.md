@@ -5,15 +5,17 @@
 
 ## Integrantes
 
-| **Nombre**   | **github** | **mail**     |
-|--------------|------------|--------------|
-| Gerardo Crot | gicrot     | gicrot@uc.cl |
-|              |            |              |
-|              |            |              |
+| **Nombre**            | **github** | **mail**          |
+|-----------------------|------------|-------------------|
+| Gerardo Crot          | gicrot     | gicrot@uc.cl      |
+| María Josefa Espinoza | mjespinoza | mjespinoza2@uc.cl |
+| Julio Andrade         |  julioa    | jnandrade@uc.cl   |
 
 ## Entrega
 
-[Datos de la entrega]
+Como se usa node.js se debe instalar inicialmente los paquetes con `npm install`.
+
+Para iniciar el simulador se debe hacer mediante `node index.js`.
 
 --- 
 ## Objetivo

@@ -1,5 +1,4 @@
 import _ from 'lodash';
-
 import {
   pointsParser
 } from './parsers.js';
@@ -16,3 +15,6 @@ export const enterPlay = (user, userPoints, userPlays) => {
     .value()
   return calculatePoints(userPoints, parsedPoints);
 };
+
+//funcion para editar el array de jugadores (no retorna)
+export const addPlayers = (players_array, name) => players_array.push([name, 501]);
