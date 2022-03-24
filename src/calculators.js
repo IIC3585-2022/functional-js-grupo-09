@@ -18,3 +18,8 @@ export const enterPlay = (user, userPoints, userPlays) => {
 
 //funcion para editar el array de jugadores (no retorna)
 export const addPlayers = (players_array, name) => players_array.push([name, 501]);
+
+
+export const iterator = function*(index, n_players){
+  yield (index +1)%(n_players)
+}

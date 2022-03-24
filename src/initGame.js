@@ -1,10 +1,19 @@
 import readline from 'readline';
 import {
-  addPlayers
+  addPlayers,
+  iterator
 } from './calculators.js';
+
+
 
 const Game = (players_array) =>{
   //usar iterators 
+  //let i= iterator(0, players_array.len)
+  //while(condicion de puntaje de jugadores){
+    //i.next().value 
+    //players.array[i]
+    //ver tema de los dialogos
+  //};
   
 
 }
