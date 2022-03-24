@@ -14,17 +14,13 @@ export const enterPlay = (user, userPoints, userPlays) => {
 
 //funcion para editar el array de jugadores (no retorna)
 export const addPlayers = (players_array, name) =>
-  players_array.push([name, 501]);
+  players_array.push([name, 0]);
 
 export const iterator = function* (index, n_players) {
   yield (index + 1) % n_players;
 };
 
 export const checkWin = (array) => {
-  array.forEach((playerData) => {
-    let score = playerData[1];
-    let winner = playerData[0];
-    if (score == 0) return winner;
-  });
-  return false;
+  let winnerData = _.filter(array, (data) => data[1] == 0)[0]; // puede usarse _.some también
+  return winnerData.length > 0 ? winnerData[0] : false;
 };
