@@ -14,13 +14,21 @@ export const enterPlay = (user, userPoints, userPlays) => {
 
 //funcion para editar el array de jugadores (no retorna)
 export const addPlayers = (players_array, name) =>
-  players_array.push([name, 0]);
+  players_array.push([name, 501]);
 
-export const iterator = function* (index, n_players) {
-  yield (index + 1) % n_players;
+export const iterator = (array) => {
+  //https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Iterators_and_Generators
+  let index = 0;
+  return {
+    next: function () {
+      return index < array.length
+        ? { value: array[index++], done: false }
+        : { value: -1 };
+    },
+  };
 };
 
 export const checkWin = (array) => {
-  let winnerData = _.filter(array, (data) => data[1] == 0)[0]; // puede usarse _.some también
+  let winnerData = _.filter(array, (data) => data[1] == 0); // puede usarse _.some también
   return winnerData.length > 0 ? winnerData[0] : false;
 };

@@ -3,12 +3,18 @@ import { addPlayers, iterator, checkWin } from "./calculators.js";
 
 const Game = (players_array) => {
   //usar iterators
-  //let i= iterator(0, players_array.len)
-  let winner = checkWin(players_array);
+  let i = iterator(players_array);
+  let winner = false;
   while (!winner) {
-    //i.next().value
-    //players.array[i]
-    //ver tema de los dialogos
+    let playerData = i.next().value;
+    if (playerData != -1) {
+      console.log(`Es el turno de ${playerData[0]}`);
+      //ver tema de los dialogos (pedir jugada)
+      winner = checkWin(players_array);
+    } else {
+      //hay que reiniciar el iterador
+      return;
+    }
   }
   console.log(`El juego ha terminado el ganador es: ${winner}`);
 };
