@@ -1,6 +1,6 @@
 import {
   beginDialog
-} from 'initGame.js';
+} from './initGame.js';
 
 function main (){
   console.log("¡Bienvenidxs!");
@@ -11,7 +11,7 @@ function main (){
   beginDialog(0, players, n_players);
   
   //comenzar juego 
-
+  
 }
 
 //ejecución juego

@@ -3,11 +3,18 @@ import {
   addPlayers
 } from './calculators.js';
 
+const Game = (players_array) =>{
+  //usar iterators 
+  
+
+}
+
 const enterPlayers = async (players_array, n_players) => {
   if (n_players === 0){
     // Here is stored the last players_array state
-    console.log(players_array);
-    return;
+    //console.log(players_array);
+    console.log("¡Que comienze el juego!");
+    return Game(players_array);
   }
 
   await beginDialog(1, players_array, n_players);
@@ -45,3 +52,4 @@ export const beginDialog = async (id, players_array, n_players) => {
     });
   };
 };
+
