@@ -9,7 +9,6 @@ const Game =  (players_array) => {
   while (!winner) {
     let playerId = i.next().value;
     let playerData = players_array[playerId];
-    console.log(playerId);
     console.log(`Es el turno de ${playerData[0]}`);
      
     //ver tema de los dialogos (pedir jugada)
