@@ -1,29 +1,19 @@
 import readline from "readline";
-import { addPlayers, iterator, checkWin, iterator2} from "./calculators.js";
+import { 
+  addPlayers,
+  iterator2,
+} from "./calculators.js";
+import {
+  game
+} from './game.js';
 
-
-const Game =  (players_array) => {
-  //usar iterators
-  let i = iterator2(0, players_array.length);
-  let winner = false;
-  while (!winner) {
-    let playerId = i.next().value;
-    let playerData = players_array[playerId];
-    console.log(`Es el turno de ${playerData[0]}`);
-     
-    //ver tema de los dialogos (pedir jugada)
-     winner = checkWin(players_array);
-   
-  }
-  console.log(`El juego ha terminado el ganador es: ${winner}`);
-};
 
 const enterPlayers = async (players_array, n_players) => {
   if (n_players === 0) {
     // Here is stored the last players_array state
-    //console.log(players_array);
     console.log("¡Que comienze el juego!");
-    return Game(players_array);
+    const iterator = iterator2(0, players_array.length);
+    return game(players_array, iterator);
   }
 
   await beginDialog(1, players_array, n_players);
@@ -61,15 +51,5 @@ export const beginDialog = async (id, players_array, n_players) => {
       rl.close();
       enterPlayers(players_array, n_players - 1);
     });
-  }
-  if(id==2){
-    rl.question("Ingresar jugada:\n", (jugada) => {
-
-     
-      rl.close();
-     
-    });
-
-
   }
 };
