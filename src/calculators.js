@@ -32,3 +32,12 @@ export const checkWin = (array) => {
   let winnerData = _.filter(array, (data) => data[1] == 0); // puede usarse _.some también
   return winnerData.length > 0 ? winnerData[0] : false;
 };
+
+
+export function* iterator2(i, n_players){
+  while(true){
+    yield ((i++)%n_players);
+  }
+  
+
+}

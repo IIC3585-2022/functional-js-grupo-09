@@ -1,5 +1,7 @@
 import { beginDialog } from './src/initGame.js';
 
+import { iterator2 } from './src/calculators.js';
+
 // Main script
 
 const main = async () => {
@@ -9,6 +11,11 @@ const main = async () => {
 
   //preguntar por el numero de jugadores e iterar para preguntar los nombres 
   beginDialog(0, players, n_players)
+
+
+
+
+
 };
 
 main();
