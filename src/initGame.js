@@ -27,7 +27,6 @@ export const beginDialog = async (id, players_array, n_players) => {
   //codigo para dialogo por consola
   // ID = 0 -> pedir numero de jugadores
   // ID = 1 -> pedir nombre jugadores
-  // ID = 2 -> pedir jugadas
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
@@ -53,3 +52,6 @@ export const beginDialog = async (id, players_array, n_players) => {
     });
   }
 };
+
+
+

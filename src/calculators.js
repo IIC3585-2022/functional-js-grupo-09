@@ -29,17 +29,6 @@ export const calculateNewPlayersPoints = (players_array, index, play) => {
   return newPlayersArray;
 };
 
-export const iterator = (array) => {
-  //https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Iterators_and_Generators
-  let index = 0;
-  return {
-    next: function () {
-      return index < array.length
-        ? { value: array[index++], done: false }
-        : { value: -1 };
-    },
-  };
-};
 
 export const checkWin = (array) => {
   let winnerData = _.filter(array, (data) => data[1] === 0); // puede usarse _.some también
