@@ -1,7 +1,5 @@
 import { beginDialog } from './src/initGame.js';
 
-import { iterator2 } from './src/calculators.js';
-
 // Main script
 
 const main = async () => {
