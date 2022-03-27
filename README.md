@@ -17,6 +17,36 @@ Como se usa node.js se debe instalar inicialmente los paquetes con `npm install`
 
 Para iniciar el simulador se debe hacer mediante `node index.js`.
 
+## Funcionamiento del juego
+
+El juego parte preguntando por la cantidad de jugadores que habrán en la partida, donde se debe escribir un input de tipo `int` de 2 en adelante.
+
+Lo siguiente es que el juego preguntará por los nombres de los jugadores 1 en 1.
+
+Por último, y en la parte más importante, se da inicio al juego. Para esto se le solicitará a cada jugador indicar sus jugadas de una en una en orden, donde se deben ingresar de la siguiente forma:
+* `SB`: Si la jugada fue un SB.
+* `DB`: Si la jugada fue un DB.
+* `[mult, point]`: Si la jugada fue en otro lado del tablero, donde `mult` es el multiplicador del puntaje (1, 2 o 3), y `point` es el puntaje obtenido sin contar el multiplicador.
+
+Al final de cada turno se mostrará un log indicando los puntajes actuales de cada jugador.
+
+Finalmente, cuando un jugador llega a 0 puntos, se termina el juego y se indica el ganador.
+
+Como ejemplo, un turno X se vería de la siguiente forma:
+```
+Ingresa tu primer tiro, <Jugador>:
+>> SB
+Ingresa tu siguiente tiro, <Jugador>:
+>> DB
+Ingresa tu siguiente tiro, <Jugador>:
+>> [3,20]
+
+Puntajes actuales:
+Jugador <Jugador>: 366 puntos
+Jugador <2do jugador>: 251 puntos
+```
+
+
 --- 
 ## Objetivo
 
